@@ -30,6 +30,7 @@ import { connect } from "react-redux";
 import { Switch, Route, Redirect } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import Dashboard from "./components/dashboard/Dashboard"
 
 /* eslint-disable */
 import ErrorPage from "./components/error/ErrorPage";
@@ -116,7 +117,7 @@ class App extends React.PureComponent {
           closeButton={<CloseButton />}
         />
         <BrowserRouter>
-            <Route path="/" render={() => <Redirect to="/dashboard" />} />
+            <Route path="/" component={Dashboard} />
             {/* <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} /> */}
             <Route path="/error" component={ErrorPage} />

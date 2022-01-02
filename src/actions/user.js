@@ -1,6 +1,7 @@
 import axios from "axios";
 import config from "../config";
-import jws from "jsonwebtoken";
+// import jws from "jsonwebtoken"; jws.decode(token)
+import jwtDecode from "jwt-decode";
 import { customFetch, encryptToken } from "../functions/functions";
 
 export const LOGIN_REQUEST = "LOGIN_REQUEST";
@@ -44,7 +45,7 @@ export const logoutUser = () => dispatch => {
 };
 
 export const receiveToken = (token, rToken = null) => dispatch => {
-  let { exp, nbf, sub: aggregateId } = jws.decode(token);
+  let { exp, nbf, sub: aggregateId } = jwtDecode(token);
   let tokenData = { exp, nbf, aggregateId, token };
 
   localStorage.setItem("HWuCsirI$sD4", encryptToken(tokenData));

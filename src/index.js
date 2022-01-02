@@ -14,18 +14,18 @@ import {
   } from "@fortawesome/free-solid-svg-icons";
 library.add(faHeart, faSitemap, faHome, faTimes);
 
-axios.defaults.baseURL = config.baseURLApi;
+// axios.defaults.baseURL = config.baseURLApi;
 axios.defaults.headers.common["Content-Type"] = "application/json";
 
-const decryptedToken = decryptToken(
-localStorage.getItem("HWuCsirI$sD4"),
-"obj"
-);
-const token = (decryptedToken || {}).token;
+// const decryptedToken = decryptToken(
+// localStorage.getItem("HWuCsirI$sD4"),
+// "obj"
+// );
+// const token = (decryptedToken || {}).token;
 
-if (token) {
-axios.defaults.headers.common["Authorization"] = "Bearer " + token;
-}
+// if (token) {
+// axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+// }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
