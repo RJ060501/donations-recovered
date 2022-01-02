@@ -1,7 +1,8 @@
 import React from "react";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
+// import { useParams } from "react-router-dom";
 import PropTypes from "prop-types";
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
 import {
   Navbar,
   Nav,
@@ -193,4 +194,4 @@ function mapStateToProps(store) {
   };
 }
 
-export default withRouter(connect(mapStateToProps)(Header));
+export default connect(mapStateToProps)(Header);
