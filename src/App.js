@@ -32,16 +32,16 @@ import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 /* eslint-disable */
-import ErrorPage from "../pages/error";
+import ErrorPage from "./components/error/ErrorPage";
 /* eslint-enable */
 
 //Components, styles & assets
-import "../styles/theme.scss";
-import LayoutComponent from "../components/Layout";
-import DocumentationLayoutComponent from "../documentation/DocumentationLayout";
-import Login from "../pages/login";
-import Register from "../pages/register";
-import { logoutUser, receiveToken } from "../actions/user";
+import "./styles/theme.scss";
+// import LayoutComponent from "../components/Layout";
+// import DocumentationLayoutComponent from "../documentation/DocumentationLayout";
+// import Login from "../pages/login";
+// import Register from "../pages/register";
+// import { logoutUser, receiveToken } from "../actions/user";
 import { encryptToken } from "./functions/functions";
 
 // const PrivateRoute = ({
@@ -110,17 +110,16 @@ class App extends React.PureComponent {
   render() {
     return (
       <div>
-        {/* <ToastContainer
+        <ToastContainer
           autoClose={5000}
           hideProgressBar
           closeButton={<CloseButton />}
-        /> */}
+        />
         <BrowserRouter>
-          <Switch>
-            <Route path="/" exact render={() => <Redirect to="/dashboard" />} />
+            <Route path="/" render={() => <Redirect to="/dashboard" />} />
             {/* <Route path="/register" exact component={Register} />
             <Route path="/login" exact component={Login} /> */}
-            <Route path="/error" exact component={ErrorPage} />
+            <Route path="/error" component={ErrorPage} />
             {/* <PrivateRoute
               path="/"
               dispatch={this.props.dispatch}
@@ -129,7 +128,6 @@ class App extends React.PureComponent {
               tokenData={this.props.tokenData}
               isAuthenticated={this.props.isAuthenticated}
             /> */}
-          </Switch>
         </BrowserRouter>
       </div>
     );
