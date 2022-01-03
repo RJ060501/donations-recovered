@@ -1,12 +1,12 @@
-// /**
-//  * Customized version of bootstrap using variables from _variables.scss.
-//  * This file is loaded via separate loader thus allowing to use original bootstrap classes (e.g. .btn-default) through out the app.
-//  */
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800');
-// @import '../../node_modules/bootstrap/scss/functions';
-// @import 'variables';
-// @import 'theme-variables';
-// @import '../../node_modules/bootstrap/scss/bootstrap';
+/**
+ * Customized version of bootstrap using variables from _variables.scss.
+ * This file is loaded via separate loader thus allowing to use original bootstrap classes (e.g. .btn-default) through out the app.
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800');
+@import '../../node_modules/bootstrap/scss/functions';
+@import 'variables';
+@import 'theme-variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // @import '../../node_modules/glyphicons-halflings/scss/glyphicons-halflings';
 // @import '../../node_modules/font-awesome/scss/font-awesome';
@@ -22,20 +22,13 @@
 // @import '../../node_modules/react-table/react-table.css';
 // @import '../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 // @import '../../node_modules/react-sortable-tree/style.css';
-// @import '../../node_modules/react-toastify/dist/ReactToastify.css';
+@import '../../node_modules/react-toastify/dist/ReactToastify.css';
 // @import '../../node_modules/react-tagsinput/react-tagsinput.css';
-// //Sass
-// // @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
-// // @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 
-// // @import "../bower_components/Font-Awesome/scss/variables";
-
-// // @import "../awesome-bootstrap-checkbox";
-
-// @import 'mixins';
-// @import 'base';
-// @import 'auth';
-// @import 'overrides';
-// @import 'general';
-// @import 'utils';
+@import 'mixins';
+@import 'base';
+@import 'auth';
+@import 'overrides';
+@import 'general';
+@import 'utils';
 

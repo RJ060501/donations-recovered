@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { UncontrolledTooltip } from 'reactstrap';
 import s from './Widget.module.scss';
 import classNames from 'classnames';
-import Loader from '../Loader'; // eslint-disable-line css-modules/no-unused-class
+import Loader from '../Loader/Loader'; // eslint-disable-line css-modules/no-unused-class
 import AnimateHeight from 'react-animate-height';
 // import uuidv4 from 'uuid/v4';
 import { v4 as uuidv4 } from 'uuid';

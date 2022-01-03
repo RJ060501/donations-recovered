@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose } from "redux";
+import ReduxThunk from 'redux-thunk';
+import serviceWorker from 'react-service-worker';
 import { Provider } from "react-redux";
 import App from './App';
 import reducers from "./reducers";
@@ -44,4 +46,4 @@ document.getElementById("root")
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.register();
-// ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
