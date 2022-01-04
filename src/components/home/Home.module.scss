@@ -1,0 +1,111 @@
+.homeHeader {
+  display: flex;
+}
+
+.welcome {
+  font-weight: 600;
+  color: black;
+}
+
+.firstLast {
+  color: #000000;
+  align-self: center;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 505;
+  letter-spacing: -0.5px;
+}
+
+.boxesContainer {
+  display: grid;
+  width: 100%;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+}
+
+.communityTilesBox {
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 2.5rem;
+  border-radius: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+  }
+}
+
+.communityTiles {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.communityTilesDescription {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 13px;
+}
+
+.heartIcon {
+  color: #95d6be;
+  display: block;
+  margin: auto;
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.userJourneysBox {
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 2.5rem;
+  border-radius: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+  }
+}
+
+.userJourneys {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.userJourneysDescription {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 13px;
+}
+
+.sitemapIcon {
+  color: #95d6be;
+  display: block;
+  margin: auto;
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
