@@ -36,6 +36,7 @@
     "react-animated-number": "^0.4.4",
     "react-css-modules": "^4.7.11",
     "react-dom": "^17.0.2",
+    "react-jwt": "^1.1.4",
     "react-redux": "^7.2.6",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
@@ -79,7 +80,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
-    "eslint": "^8.5.0",
+    "es-check": "^6.1.1",
+    "eslint": "^8.6.0",
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
     "sass": "^1.45.1"

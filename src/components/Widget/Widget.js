@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { UncontrolledTooltip } from 'reactstrap';
 import s from './Widget.module.scss';
 import classNames from 'classnames';
-import Loader from '../Loader/Loader'; // eslint-disable-line css-modules/no-unused-class
+import Loader from '../Loader/Loader'; // eslint-disable-line
 import AnimateHeight from 'react-animate-height';
 // import uuidv4 from 'uuid/v4';
 import { v4 as uuidv4 } from 'uuid';
@@ -37,7 +37,7 @@ class Widget extends React.Component {
     showTooltip: PropTypes.bool,
     bodyClass: PropTypes.string,
     customControls: PropTypes.bool,
-    options: PropTypes.object, //eslint-disable-line,
+    options: PropTypes.object, // eslint-disable-line
     fetchingData: PropTypes.bool,
   };
 

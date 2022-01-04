@@ -3,7 +3,11 @@ import qs from "query-string";
 import Raven from "raven-js";
 import { receiveToken } from "../actions/user.js";
 import config from "../config.js";
-import SimpleCrypto from "simple-crypto-js";
+// import SimpleCrypto from "simple-crypto-js";
+import jwtDecode from "jwt-decode";
+import { useJwt } from "react-jwt";
+import jwt from "jwt-encode";
+
 
 export const customFetch = async ({ method = "POST", ...params }) => {
   try {
@@ -86,10 +90,12 @@ export const getNewTokens = async refreshToken => {
 };
 
 export const encryptToken = token => {
+  // const { decodedToken, TokenExpired } = useJwt(token)
   try {
-    const str = "fqy$RY0g";
-    const simpleCrypto = new SimpleCrypto(str);
-    return simpleCrypto.encrypt(token);
+    const str = "fqy$RY0g"; // jwt token
+    const jwt = jwt.sign(str);
+    // const simpleCrypto = new SimpleCrypto(str);
+    return jwt.encrypt(token);
   } catch (err) {
     return undefined;
   }

@@ -5,11 +5,12 @@ import * as am4maps from "@amcharts/amcharts4/maps";
 import cities from './mock';
 import am4geodata_usaHigh from "@amcharts/amcharts4-geodata/usaHigh";
 
-import AnimateNumber from 'react-animated-number';
+// import AnimateNumber from 'react-animated-number';
+
 import s from './am4chartMap.module.scss';
-  
-  class Am4chartMap extends Component {
-  
+
+class Am4chartMap extends Component {
+
   componentDidMount() {
     let map = am4core.create("map", am4maps.MapChart);
     map.geodata = am4geodata_usaHigh;
@@ -59,7 +60,7 @@ import s from './am4chartMap.module.scss';
   }
 
   componentWillUnmount() {
-    if(this.map) {
+    if (this.map) {
       this.map.dispose();
     }
   }
@@ -71,13 +72,14 @@ import s from './am4chartMap.module.scss';
           <h6 className="mt-1">GEO-LOCATIONS</h6>
           <p className="h3 m-0">
             <span className="mr-xs fw-normal">
-              <AnimateNumber
+              {/* <AnimateNumber
                 value={1656843}
                 initialValue={0}
                 duration={1000} 
                 stepPrecision={0}
                 formatValue={n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}
-              /></span>
+              /> */}
+            </span>
             <i className="fa fa-map-marker" />
           </p>
         </div>
